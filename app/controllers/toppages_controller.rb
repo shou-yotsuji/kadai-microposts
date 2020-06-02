@@ -5,4 +5,6 @@ class ToppagesController < ApplicationController
       @microposts = current_user.feed_microposts.order(id: :desc).page(params[:page])
     end
   end
+  
+  
 end
